@@ -1,0 +1,9 @@
+
+ :root {
+    --fundoLogin: rgb (224, 236, 210);
+    --corFonteLogin: black;
+    --btnSistema: blue;
+    --corFonteBotao: white;
+    --btnSistemaHover: violet;
+    --corFonteBotaoHover: yellow;
+ }
