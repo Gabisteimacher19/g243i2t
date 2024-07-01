@@ -2,8 +2,9 @@
 @import url(padrao.css);
 
 .pagina-login {
-    background-color: aquamarine;
+    background-color: #DB686E;
 }
+
 .login {
     width: 100vw;
     height: 100vh;
@@ -11,32 +12,39 @@
     align-items: center;
     justify-content: center;
 }
-.form-login{
-    background-color: rgb(5, 7, 121);
+
+.form-login {
+    background-color: var(--fundoLogin);
     width: 300px;
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 25px;
 }
+
 .form-login button {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 80%;
-    padding: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--btnSistema);
 }
-.form-login button:hover{
-    background-color: bisque;
-    color: black;
-    transform: ;
+
+.form-login button:hover {
+    background-color: var(--btnSistemaHover);
+    color: var(--fonte);
 }
+
 .campo-input {
     width: 300px;
     height: 50px;
     position: relative;
     margin: 2rem 0;
 }
+
 .campo-input input {
     position: absolute;
     inset: 0;
@@ -44,26 +52,36 @@
     padding: 0 1rem;
     font-size: 1rem;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid #DB3D1F;
     border-radius: .5rem;
-    color: black;
+    color: var(--fonte);
 }
+
 .campo-input label {
     position: relative;
     top: 30%;
     left: 1rem;
     transform: translateY(-30%);
-    color: rgb(255, 140, 0);
+    color: var(--fonte);
     pointer-events: none;
     padding: 0 .3rem;
-    background-color: rgb(6, 33, 234);
+    background-color: var(--fundoLogin);
     transition: 200ms ease-in-out top,
-                200ms ease-in-out font-size,
-                200ms ease-in-out font-color;
+        200ms ease-in-out font-size,
+        200ms ease-in-out font-color;
 }
-.campo-input input:focus + label,
-.campo-input input:valid + label{
-    top: -10px;
+
+.campo-input input:focus+label,
+.campo-input input:valid+label {
+    top: -9px;
     font-size: .8rem;
-    color: white;
+    color: var(--fonte);
+}
+.cadastro {
+    background-color: rgb(12, 1, 1);
+}
+
+.form-cadastro {
+    height: 60vh;
+    width: 25vw;
 }
